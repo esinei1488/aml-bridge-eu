@@ -15,6 +15,12 @@ import {
   WalletCards,
   Sparkles,
   Mail,
+  CalendarDays,
+  Scale,
+  FileCheck2,
+  CircleDollarSign,
+  Layers3,
+  Clock3,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -78,6 +84,9 @@ const content = {
       ["Bank / EMI Preparation", "Business activity descriptions, transaction flow explanations, SOF documentation, and response packages.", Landmark],
       ["AML Audit / Health Check", "Review of current AML framework, gap analysis, risk findings, and practical recommendations.", SearchCheck],
     ],
+    trustTitle: "Built for serious compliance cases",
+    trustText: "Premium AML documentation support for clients who need clarity, structure, and defensible explanations.",
+    trustCards: [["Certification background", "AML Foundations and Senior Specialist training with CPD hours.", BadgeCheck], ["Document-first approach", "Clear files, timelines, evidence maps, and structured explanations.", FileCheck2], ["Crypto-aware support", "Source of funds, transaction trails, exchange reviews, and wallet logic.", LockKeyhole], ["EU business focus", "Support for clients dealing with banks, EMIs, exchanges, and compliance teams.", Globe2]],
     whoTitle: "Who we help",
     who: ["Crypto users and companies facing compliance reviews", "Fintech and payment-related businesses", "Companies preparing for bank or EMI onboarding", "Businesses needing AML/KYC documentation", "Real estate, consulting, and service businesses", "Individuals needing structured source of funds explanations"],
     processTitle: "A structured process",
@@ -93,6 +102,8 @@ const content = {
     contactText: "Send a short description of your case. We will review the situation and explain what type of compliance package may be needed.",
     form: ["Name", "Email", "Telegram / WhatsApp", "Country", "Type of case", "Short description"],
     send: "Send request",
+    quickCta: "Need urgent compliance support?",
+    quickCtaText: "For exchange freezes, bank reviews, or source of funds requests, send a short case summary and available documents.",
     disclaimer: "AML Bridge EU provides AML and compliance consulting, documentation support, and practical advisory services. We do not provide legal advice, tax advice, or guarantee approval by banks, crypto exchanges, payment institutions, or regulators. Final decisions are always made by the relevant institution.",
   },
   ua: {
@@ -112,6 +123,9 @@ const content = {
       ["Bank / EMI Preparation", "Опис бізнесу, transaction flow explanations, SOF documentation та response packages.", Landmark],
       ["AML Audit / Health Check", "Перевірка AML framework, gap analysis, risk findings та практичні рекомендації.", SearchCheck],
     ],
+    trustTitle: "Для серйозних compliance кейсів",
+    trustText: "Преміальна AML documentation support для клієнтів, яким потрібні чіткість, структура та defensible explanations.",
+    trustCards: [["Certification background", "AML Foundations та Senior Specialist training з CPD hours.", BadgeCheck], ["Document-first approach", "Clear files, timelines, evidence maps та structured explanations.", FileCheck2], ["Crypto-aware support", "Source of funds, transaction trails, exchange reviews та wallet logic.", LockKeyhole], ["EU business focus", "Підтримка клієнтів у взаємодії з banks, EMIs, exchanges та compliance teams.", Globe2]],
     whoTitle: "Кому ми допомагаємо",
     who: ["Crypto users та компаніям із compliance reviews", "Fintech та payment-related businesses", "Компаніям перед bank або EMI onboarding", "Бізнесам, яким потрібна AML/KYC документація", "Real estate, consulting та service businesses", "Приватним клієнтам з Source of Funds поясненнями"],
     processTitle: "Структурований процес",
@@ -127,6 +141,8 @@ const content = {
     contactText: "Надішліть короткий опис кейсу. Ми перевіримо ситуацію та пояснимо, який compliance package може бути потрібен.",
     form: ["Імʼя", "Email", "Telegram / WhatsApp", "Країна", "Тип кейсу", "Короткий опис"],
     send: "Надіслати запит",
+    quickCta: "Потрібна термінова compliance підтримка?",
+    quickCtaText: "Для exchange freezes, bank reviews or Source of Funds requests надішліть короткий опис кейсу та доступні документи.",
     disclaimer: "AML Bridge EU надає AML та compliance consulting, documentation support and practical advisory services. Ми не надаємо юридичні або податкові консультації та не гарантуємо approval з боку банків, криптобірж, платіжних установ або регуляторів. Остаточне рішення завжди приймає відповідна установа.",
   },
   pl: {
@@ -146,6 +162,9 @@ const content = {
       ["Bank / EMI Preparation", "Opis działalności, transaction flow explanations, SOF documentation i response packages.", Landmark],
       ["AML Audit / Health Check", "Przegląd AML framework, gap analysis, risk findings i praktyczne rekomendacje.", SearchCheck],
     ],
+    trustTitle: "Dla poważnych spraw compliance",
+    trustText: "Premium AML documentation support dla klientów, którzy potrzebują jasności, struktury i defensible explanations.",
+    trustCards: [["Certification background", "AML Foundations i Senior Specialist training z CPD hours.", BadgeCheck], ["Document-first approach", "Clear files, timelines, evidence maps i structured explanations.", FileCheck2], ["Crypto-aware support", "Source of funds, transaction trails, exchange reviews i wallet logic.", LockKeyhole], ["EU business focus", "Wsparcie klientów w kontaktach z banks, EMIs, exchanges i compliance teams.", Globe2]],
     whoTitle: "Komu pomagamy",
     who: ["Użytkownikom i firmom crypto z compliance reviews", "Firmom fintech i payment-related", "Firmom przed bank lub EMI onboarding", "Biznesom potrzebującym dokumentacji AML/KYC", "Firmom real estate, consulting i service", "Klientom indywidualnym z Source of Funds explanations"],
     processTitle: "Uporządkowany proces",
@@ -161,9 +180,18 @@ const content = {
     contactText: "Wyślij krótki opis sprawy. Sprawdzimy sytuację i wyjaśnimy, jaki compliance package może być potrzebny.",
     form: ["Imię i nazwisko", "Email", "Telegram / WhatsApp", "Kraj", "Rodzaj sprawy", "Krótki opis"],
     send: "Wyślij zapytanie",
+    quickCta: "Potrzebujesz pilnego wsparcia compliance?",
+    quickCtaText: "Dla exchange freezes, bank reviews lub Source of Funds requests wyślij krótki opis sprawy i dostępne dokumenty.",
     disclaimer: "AML Bridge EU świadczy usługi AML i compliance consulting, documentation support oraz practical advisory services. Nie świadczymy usług prawnych ani podatkowych i nie gwarantujemy akceptacji przez banki, giełdy kryptowalut, instytucje płatnicze ani regulatorów. Ostateczne decyzje zawsze podejmuje właściwa instytucja.",
   },
 };
+
+const floating = [
+  { icon: ShieldCheck, label: "AML" },
+  { icon: WalletCards, label: "SOF" },
+  { icon: Landmark, label: "BANK" },
+  { icon: LockKeyhole, label: "EDD" },
+];
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -172,10 +200,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#061816] text-white selection:bg-emerald-300 selection:text-emerald-950">
-      <div className="pointer-events-none fixed inset-0 opacity-60">
+      <div className="pointer-events-none fixed inset-0 overflow-hidden opacity-70">
         <div className="absolute left-[-10%] top-[-10%] h-[420px] w-[420px] rounded-full bg-emerald-500/20 blur-[120px]" />
         <div className="absolute right-[-10%] top-[20%] h-[380px] w-[380px] rounded-full bg-cyan-400/10 blur-[120px]" />
         <div className="absolute bottom-[-10%] left-[35%] h-[420px] w-[420px] rounded-full bg-teal-400/10 blur-[120px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,.09)_1px,transparent_0)] [background-size:28px_28px]" />
       </div>
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#061816]/80 backdrop-blur-2xl">
@@ -203,9 +232,9 @@ function App() {
       </header>
 
       <main id="top" className="relative">
-        <section className="mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-16 md:grid-cols-[1.08fr_0.92fr] md:pb-28 md:pt-24">
+        <section className="mx-auto grid max-w-7xl gap-10 px-5 pb-16 pt-16 md:grid-cols-[1.08fr_0.92fr] md:pb-24 md:pt-24">
           <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100 shadow-2xl shadow-emerald-900/20">
               <Sparkles size={16} /> {t.badge}
             </div>
             <h1 className="max-w-4xl text-5xl font-black tracking-[-0.04em] text-white md:text-7xl">{t.heroTitle}</h1>
@@ -227,7 +256,7 @@ function App() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.12 }} className="relative">
+          <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.12 }} className="relative hidden md:block">
             <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-emerald-300/25 via-white/10 to-cyan-300/10 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-5 shadow-2xl backdrop-blur-2xl">
               <div className="rounded-[2rem] border border-white/10 bg-[#0b211f]/90 p-6">
@@ -259,6 +288,21 @@ function App() {
           </motion.div>
         </section>
 
+        <section className="mx-auto max-w-7xl px-5 pb-10">
+          <div className="grid gap-4 md:grid-cols-4">
+            {t.trustCards.map((card) => {
+              const Icon = card[2];
+              return (
+                <div key={card[0]} className="rounded-[1.5rem] border border-white/10 bg-white/[0.055] p-5 backdrop-blur-xl">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-300/15 text-emerald-200"><Icon size={20} /></div>
+                  <div className="font-black text-white">{card[0]}</div>
+                  <div className="mt-2 text-sm leading-6 text-white/55">{card[1]}</div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
         <section id="services" className="mx-auto max-w-7xl px-5 py-20">
           <div className="max-w-3xl">
             <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.servicesTitle}</h2>
@@ -269,7 +313,7 @@ function App() {
               const Icon = s[2];
               return (
                 <div key={s[0]} className="group rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-xl transition hover:-translate-y-1 hover:border-emerald-300/40 hover:bg-white/[0.09]">
-                  <div className="mb-6 flex h-13 w-13 items-center justify-center rounded-2xl bg-emerald-300 text-emerald-950 shadow-lg shadow-emerald-500/20"><Icon /></div>
+                  <div className="mb-6 flex h-13 w-13 items-center justify-center rounded-2xl bg-emerald-300 p-3 text-emerald-950 shadow-lg shadow-emerald-500/20"><Icon /></div>
                   <h3 className="text-lg font-black">{s[0]}</h3>
                   <p className="mt-3 text-sm leading-6 text-white/55">{s[1]}</p>
                 </div>
@@ -280,7 +324,10 @@ function App() {
 
         <section className="border-y border-white/10 bg-white/[0.04] py-20">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-[0.8fr_1.2fr]">
-            <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.whoTitle}</h2>
+            <div>
+              <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.trustTitle}</h2>
+              <p className="mt-5 text-lg leading-8 text-white/55">{t.trustText}</p>
+            </div>
             <div className="grid gap-4 md:grid-cols-2">
               {t.who.map((item) => (
                 <div key={item} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-[#071f1c]/70 p-4 text-sm leading-6 text-white/70">
@@ -292,21 +339,41 @@ function App() {
         </section>
 
         <section id="pricing" className="mx-auto max-w-7xl px-5 py-20">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl font-black tracking-tight md:text-5xl">{p.title}</h2>
-            <p className="mt-4 text-lg leading-8 text-white/60">{p.subtitle}</p>
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div className="max-w-3xl">
+              <h2 className="text-4xl font-black tracking-tight md:text-5xl">{p.title}</h2>
+              <p className="mt-4 text-lg leading-8 text-white/60">{p.subtitle}</p>
+            </div>
+            <div className="rounded-2xl border border-emerald-300/20 bg-emerald-300/10 px-5 py-4 text-sm font-bold text-emerald-100">
+              <CircleDollarSign className="mb-2 text-emerald-300" /> Premium boutique positioning
+            </div>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {p.plans.map((plan, idx) => (
-              <div key={plan[0]} className={`rounded-[1.75rem] border p-6 shadow-2xl backdrop-blur-xl ${idx === 1 ? "border-emerald-300/50 bg-emerald-300 text-emerald-950" : "border-white/10 bg-white/[0.06] text-white"}`}>
-                <div className="mb-4 inline-flex rounded-full bg-black/10 px-3 py-1 text-xs font-black uppercase tracking-wide">Premium</div>
-                <h3 className="text-xl font-black">{plan[0]}</h3>
+              <div key={plan[0]} className={`relative overflow-hidden rounded-[1.75rem] border p-6 shadow-2xl backdrop-blur-xl ${idx === 1 ? "border-emerald-300/50 bg-emerald-300 text-emerald-950" : "border-white/10 bg-white/[0.06] text-white"}`}>
+                {idx === 1 && <div className="absolute right-5 top-5 rounded-full bg-emerald-950 px-3 py-1 text-xs font-black uppercase text-emerald-100">Most requested</div>}
+                <div className={`mb-4 inline-flex rounded-full px-3 py-1 text-xs font-black uppercase tracking-wide ${idx === 1 ? "bg-emerald-950/10" : "bg-white/10"}`}>Premium</div>
+                <h3 className="pr-16 text-xl font-black">{plan[0]}</h3>
                 <div className="mt-5 text-3xl font-black tracking-tight">{plan[1]}</div>
                 <p className={`mt-5 text-sm leading-6 ${idx === 1 ? "text-emerald-950/70" : "text-white/55"}`}>{plan[2]}</p>
               </div>
             ))}
           </div>
           <p className="mt-6 text-sm text-white/45">{p.note}</p>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-5 pb-8">
+          <div className="overflow-hidden rounded-[2rem] border border-emerald-300/20 bg-gradient-to-br from-emerald-300 to-cyan-100 p-8 text-emerald-950 shadow-2xl shadow-emerald-950/20 md:p-10">
+            <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+              <div>
+                <h2 className="text-3xl font-black tracking-tight md:text-4xl">{t.quickCta}</h2>
+                <p className="mt-3 max-w-3xl text-base leading-7 text-emerald-950/70">{t.quickCtaText}</p>
+              </div>
+              <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-950 px-6 py-4 text-sm font-black text-white transition hover:bg-black">
+                {t.heroCta} <ArrowRight size={18} />
+              </a>
+            </div>
+          </div>
         </section>
 
         <section id="process" className="border-y border-white/10 bg-white/[0.04] py-20">
@@ -337,6 +404,10 @@ function App() {
             {t.trust.map((item) => (
               <div key={item} className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 font-black text-white/85">{item}</div>
             ))}
+            <div className="rounded-2xl border border-emerald-300/20 bg-emerald-300/10 p-5 sm:col-span-2">
+              <div className="flex items-center gap-3 font-black text-emerald-100"><Clock3 className="text-emerald-300" /> Confidential case review</div>
+              <p className="mt-2 text-sm leading-6 text-white/55">Initial review can be used to understand what documents are missing before approaching a bank, EMI, or exchange compliance team.</p>
+            </div>
           </div>
         </section>
 
@@ -355,13 +426,14 @@ function App() {
         </section>
 
         <section id="contact" className="mx-auto max-w-7xl px-5 py-20">
-          <div className="grid overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.06] backdrop-blur-xl md:grid-cols-2">
+          <div className="grid overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl md:grid-cols-2">
             <div className="p-8 md:p-10">
               <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.contactTitle}</h2>
               <p className="mt-5 text-lg leading-8 text-white/60">{t.contactText}</p>
               <div className="mt-8 space-y-4 text-white/70">
                 <div className="flex items-center gap-3"><Mail className="text-emerald-300" /> contact@amlbridge.eu</div>
                 <div className="flex items-center gap-3"><MessageCircle className="text-emerald-300" /> Telegram / WhatsApp available</div>
+                <div className="flex items-center gap-3"><CalendarDays className="text-emerald-300" /> Consultation by appointment</div>
               </div>
             </div>
             <form className="bg-white p-6 text-slate-950 md:p-8">
@@ -380,15 +452,26 @@ function App() {
               <button type="button" className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-950 px-6 py-4 text-sm font-black text-white transition hover:bg-emerald-800">
                 {t.send} <ArrowRight size={18} />
               </button>
+              <p className="mt-4 text-xs leading-5 text-slate-500">By submitting a request, you agree that AML Bridge EU may review your message for the purpose of responding to your inquiry.</p>
             </form>
           </div>
         </section>
       </main>
 
+      <a href="#contact" className="fixed bottom-5 right-5 z-50 hidden items-center gap-2 rounded-full bg-emerald-300 px-5 py-3 text-sm font-black text-emerald-950 shadow-2xl shadow-emerald-950/30 transition hover:bg-white md:flex">
+        <MessageCircle size={18} /> Contact
+      </a>
+
       <footer className="relative border-t border-white/10 px-5 py-8 text-sm text-white/45">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center gap-3 font-black text-white">
             <ShieldCheck className="text-emerald-300" /> AML Bridge EU
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3 text-white/55">
+            <span className="rounded-full border border-white/10 px-3 py-1">Privacy Policy</span>
+            <span className="rounded-full border border-white/10 px-3 py-1">Terms</span>
+            <span className="rounded-full border border-white/10 px-3 py-1">Cookies</span>
+            <span className="rounded-full border border-white/10 px-3 py-1">Disclaimer</span>
           </div>
           <p className="mt-4 max-w-5xl leading-6">{t.disclaimer}</p>
           <div className="mt-6 border-t border-white/10 pt-6">© 2026 AML Bridge EU. All rights reserved.</div>
