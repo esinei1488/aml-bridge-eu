@@ -136,7 +136,7 @@ const content = {
     aboutText: "Ми фокусуємося на документах, поясненнях та risk logic, які банки, EMIs, crypto platforms і compliance teams можуть реально перевірити.",
     trust: ["Фокус на документах", "EU-oriented", "Crypto-aware", "Risk-based", "Зрозуміла мова", "Premium support"],
     faqTitle: "FAQ",
-    faq: [["Ви гарантуєте approval банку or розблокування акаунта?", "No. Ми готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
+    faq: [["Ви гарантуєте approval банку or розблокування акаунта?", "NO. Ми готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
     contactTitle: "Отримати конфіденційний review",
     contactText: "Надішліть короткий опис кейсу. Ми перевіримо ситуацію та пояснимо, який compliance package може бути потрібен.",
     form: ["Імʼя", "Email", "Telegram / WhatsApp", "Країна", "Тип кейсу", "Короткий опис"],
@@ -210,9 +210,7 @@ function App() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#061816]/80 backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <a href="#top" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-emerald-950 shadow-xl shadow-emerald-950/20">
-              <ShieldCheck size={24} />
-            </div>
+            <img src="/logo.png" alt="AML Bridge EU logo" className="h-12 w-12 rounded-2xl object-cover shadow-xl shadow-emerald-950/20 ring-1 ring-white/20" />
             <div>
               <div className="text-lg font-black tracking-tight">AML Bridge EU</div>
               <div className="text-xs text-emerald-100/70">AML • Crypto • Banking</div>
@@ -391,6 +389,70 @@ function App() {
           </div>
         </section>
 
+        <section className="relative border-t border-white/10 px-5 py-20">
+          <div className="mx-auto max-w-7xl">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55 }}
+              className="max-w-3xl"
+            >
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-bold text-emerald-100">
+                <BadgeCheck size={16} /> Certifications & Trust
+              </div>
+              <h2 className="text-4xl font-black tracking-tight md:text-5xl">International AML Certifications</h2>
+              <p className="mt-5 text-lg leading-8 text-white/60">
+                AML Bridge EU is supported by AML training in anti-money laundering foundations, senior AML specialist topics, compliance controls, source of funds logic, sanctions screening, and crypto-related review workflows.
+              </p>
+            </motion.div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.55 }}
+                className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
+              >
+                <img src="/cert1.jpg" alt="Certified Anti-Money Laundering Senior Specialist certificate" className="w-full border-b border-white/10 object-cover" />
+                <div className="p-6 md:p-8">
+                  <h3 className="text-2xl font-black text-white">Certified Anti-Money Laundering Senior Specialist</h3>
+                  <p className="mt-4 text-sm leading-7 text-white/55">
+                    Advanced AML certification with 45 CPD hours, supporting work on AML frameworks, risk-based controls, source of funds documentation, transaction logic, and crypto compliance reviews.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <span className="rounded-full bg-emerald-300/10 px-4 py-2 text-sm font-bold text-emerald-200">45 CPD Hours</span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white/70">Senior AML</span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white/70">Compliance Controls</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.65 }}
+                className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
+              >
+                <img src="/cert2.jpg" alt="Certified in Anti-Money Laundering Foundations certificate" className="w-full border-b border-white/10 object-cover" />
+                <div className="p-6 md:p-8">
+                  <h3 className="text-2xl font-black text-white">Certified in Anti-Money Laundering Foundations</h3>
+                  <p className="mt-4 text-sm leading-7 text-white/55">
+                    AML foundations certification with 10 CPD hours, covering customer due diligence, screening logic, AML documentation, risk controls, and source of funds basics.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <span className="rounded-full bg-emerald-300/10 px-4 py-2 text-sm font-bold text-emerald-200">10 CPD Hours</span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white/70">AML Foundations</span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white/70">CDD / KYC</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         <section id="about" className="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-2">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-bold text-emerald-100">
@@ -431,9 +493,10 @@ function App() {
               <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.contactTitle}</h2>
               <p className="mt-5 text-lg leading-8 text-white/60">{t.contactText}</p>
               <div className="mt-8 space-y-4 text-white/70">
-                <div className="flex items-center gap-3"><Mail className="text-emerald-300" /> contact@amlbridge.eu</div>
-                <div className="flex items-center gap-3"><MessageCircle className="text-emerald-300" /> Telegram / WhatsApp available</div>
-                <div className="flex items-center gap-3"><CalendarDays className="text-emerald-300" /> Consultation by appointment</div>
+                <a href="mailto:amlbridgeeu@gmail.com" className="flex items-center gap-3 transition hover:text-emerald-300"><Mail className="text-emerald-300" /> amlbridgeeu@gmail.com</a>
+                <a href="tel:+19413028318" className="flex items-center gap-3 transition hover:text-emerald-300"><MessageCircle className="text-emerald-300" /> +1 (941) 302-8318</a>
+                <a href="https://t.me/amlbridge" target="_blank" rel="noreferrer" className="flex items-center gap-3 transition hover:text-emerald-300"><MessageCircle className="text-emerald-300" /> Telegram: @amlbridge</a>
+                <a href="https://www.linkedin.com/in/andrii-stopin-2264a6325" target="_blank" rel="noreferrer" className="flex items-center gap-3 transition hover:text-emerald-300"><CalendarDays className="text-emerald-300" /> LinkedIn: Andrii Stopin</a>
               </div>
             </div>
             <form className="bg-white p-6 text-slate-950 md:p-8">
@@ -465,13 +528,15 @@ function App() {
       <footer className="relative border-t border-white/10 px-5 py-8 text-sm text-white/45">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center gap-3 font-black text-white">
-            <ShieldCheck className="text-emerald-300" /> AML Bridge EU
+            <img src="/logo.png" alt="AML Bridge EU logo" className="h-8 w-8 rounded-xl object-cover" /> AML Bridge EU
           </div>
           <div className="mt-5 flex flex-wrap gap-3 text-white/55">
             <span className="rounded-full border border-white/10 px-3 py-1">Privacy Policy</span>
             <span className="rounded-full border border-white/10 px-3 py-1">Terms</span>
             <span className="rounded-full border border-white/10 px-3 py-1">Cookies</span>
             <span className="rounded-full border border-white/10 px-3 py-1">Disclaimer</span>
+            <a href="mailto:amlbridgeeu@gmail.com" className="rounded-full border border-white/10 px-3 py-1 transition hover:text-emerald-300">amlbridgeeu@gmail.com</a>
+            <a href="https://t.me/amlbridge" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 px-3 py-1 transition hover:text-emerald-300">@amlbridge</a>
           </div>
           <p className="mt-4 max-w-5xl leading-6">{t.disclaimer}</p>
           <div className="mt-6 border-t border-white/10 pt-6">© 2026 AML Bridge EU. All rights reserved.</div>
