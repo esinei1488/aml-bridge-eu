@@ -415,7 +415,7 @@ function App() {
                 transition={{ duration: 0.55 }}
                 className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
               >
-                <img src={"/cert1.jpg"} alt="Certified Anti-Money Laundering Senior Specialist certificate" className="w-full border-b border-white/10 object-cover" />
+                <img src={"/Cert1.jpg"} alt="Certified Anti-Money Laundering Senior Specialist certificate" className="w-full border-b border-white/10 object-cover" />
                 <div className="p-6 md:p-8">
                   <h3 className="text-2xl font-black text-white">Certified Anti-Money Laundering Senior Specialist</h3>
                   <p className="mt-4 text-sm leading-7 text-white/55">
@@ -436,7 +436,7 @@ function App() {
                 transition={{ duration: 0.65 }}
                 className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
               >
-                <img src={"/cert2.jpg"} alt="Certified in Anti-Money Laundering Foundations certificate" className="w-full border-b border-white/10 object-cover" />
+                <img src={"/Cert2.jpg"} alt="Certified in Anti-Money Laundering Foundations certificate" className="w-full border-b border-white/10 object-cover" />
                 <div className="p-6 md:p-8">
                   <h3 className="text-2xl font-black text-white">Certified in Anti-Money Laundering Foundations</h3>
                   <p className="mt-4 text-sm leading-7 text-white/55">
