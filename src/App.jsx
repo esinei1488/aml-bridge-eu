@@ -136,7 +136,7 @@ const content = {
     aboutText: "Ми фокусуємося на документах, поясненнях та risk logic, які банки, EMIs, crypto platforms і compliance teams можуть реально перевірити.",
     trust: ["Фокус на документах", "EU-oriented", "Crypto-aware", "Risk-based", "Зрозуміла мова", "Premium support"],
     faqTitle: "FAQ",
-    faq: [["Ви гарантуєте approval банку or розблокування акаунта?", "NO. Ми готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
+    faq: [["Ви гарантуєте approval банку or розблокування акаунта?", "No. Ми готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
     contactTitle: "Отримати конфіденційний review",
     contactText: "Надішліть короткий опис кейсу. Ми перевіримо ситуацію та пояснимо, який compliance package може бути потрібен.",
     form: ["Імʼя", "Email", "Telegram / WhatsApp", "Країна", "Тип кейсу", "Короткий опис"],
@@ -415,7 +415,7 @@ function App() {
                 transition={{ duration: 0.55 }}
                 className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
               >
-                <img src={"/Cert1.jpg"} alt="Certified Anti-Money Laundering Senior Specialist certificate" className="w-full border-b border-white/10 object-cover" />
+                <img src="/Cert1.jpg" alt="Certified Anti-Money Laundering Senior Specialist certificate" className="w-full border-b border-white/10 object-cover" />
                 <div className="p-6 md:p-8">
                   <h3 className="text-2xl font-black text-white">Certified Anti-Money Laundering Senior Specialist</h3>
                   <p className="mt-4 text-sm leading-7 text-white/55">
@@ -436,7 +436,7 @@ function App() {
                 transition={{ duration: 0.65 }}
                 className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl backdrop-blur-xl"
               >
-                <img src={"/Cert2.jpg"} alt="Certified in Anti-Money Laundering Foundations certificate" className="w-full border-b border-white/10 object-cover" />
+                <img src="/Cert2.jpg" alt="Certified in Anti-Money Laundering Foundations certificate" className="w-full border-b border-white/10 object-cover" />
                 <div className="p-6 md:p-8">
                   <h3 className="text-2xl font-black text-white">Certified in Anti-Money Laundering Foundations</h3>
                   <p className="mt-4 text-sm leading-7 text-white/55">
@@ -499,20 +499,21 @@ function App() {
                 <a href="https://www.linkedin.com/in/andrii-stopin-2264a6325" target="_blank" rel="noreferrer" className="flex items-center gap-3 transition hover:text-emerald-300"><CalendarDays className="text-emerald-300" /> LinkedIn: Andrii Stopin</a>
               </div>
             </div>
-            <form className="bg-white p-6 text-slate-950 md:p-8">
+            <form action="https://formspree.io/f/mlgvogqv" method="POST" className="bg-white p-6 text-slate-950 md:p-8">
               <div className="grid gap-4 sm:grid-cols-2">
                 {t.form.slice(0, 5).map((label) => (
                   <label key={label} className="text-sm font-bold text-slate-600">
                     {label}
-                    <input className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-emerald-800 focus:bg-white" />
+                    <input name={label.toLowerCase().replaceAll(" ", "_").replaceAll("/", "_")} required className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-emerald-800 focus:bg-white" />
                   </label>
                 ))}
                 <label className="text-sm font-bold text-slate-600 sm:col-span-2">
                   {t.form[5]}
-                  <textarea rows={5} className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-emerald-800 focus:bg-white" />
+                  <textarea name="message" rows={5} required className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-emerald-800 focus:bg-white" />
                 </label>
               </div>
-              <button type="button" className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-950 px-6 py-4 text-sm font-black text-white transition hover:bg-emerald-800">
+              <input type="hidden" name="_subject" value="New AML Bridge EU inquiry" />
+              <button type="submit" className="mt-5 flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-950 px-6 py-4 text-sm font-black text-white transition hover:bg-emerald-800">
                 {t.send} <ArrowRight size={18} />
               </button>
               <p className="mt-4 text-xs leading-5 text-slate-500">By submitting a request, you agree that AML Bridge EU may review your message for the purpose of responding to your inquiry.</p>
@@ -547,4 +548,3 @@ function App() {
 }
 
 export default App;
-// update 
