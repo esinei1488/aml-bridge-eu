@@ -78,6 +78,9 @@ const content = {
     metrics: [["2", "AML certificates"], ["45+", "CPD hours"], ["EU", "Client focus"]],
     servicesTitle: "High-value compliance support",
     servicesSubtitle: "Built for real AML, banking, fintech, and crypto compliance cases.",
+    caseTitle: "Real case examples",
+    caseText: "Typical situations where structured AML documentation and clear compliance explanations can help reduce friction with banks, EMIs, and crypto platforms.",
+    cases: [["Frozen crypto exchange account", "Preparing a clear response package for an exchange review, including source of funds explanation, transaction logic, and supporting documents."], ["Source of Funds request", "Building a structured SOF/SOW package with timeline, evidence map, bank statements, exchange records, and client statement."], ["Bank compliance review", "Explaining business activity, expected transaction flows, counterparties, risk controls, and document trail."], ["EMI onboarding", "Preparing a business profile, compliance narrative, AML/KYC materials, and transaction flow explanation for onboarding teams."], ["AML policy package", "Drafting AML/KYC policy, CDD/EDD procedure, sanctions screening process, and internal control documentation."], ["High-risk transfer explanation", "Organizing facts and evidence around large transfers, crypto-to-fiat conversion, business income, or international payments."]],
     services: [
       ["Crypto Compliance Support", "Support with exchange reviews, source of funds explanations, transaction history clarification, and document preparation.", WalletCards],
       ["AML Policy Development", "AML/KYC policies, risk-based procedures, CDD/EDD, sanctions screening, and internal controls.", FileText],
@@ -110,13 +113,16 @@ const content = {
     nav: ["Послуги", "Вартість", "Процес", "Про нас", "FAQ", "Контакти"],
     badge: "EU-focused AML & crypto compliance boutique",
     heroTitle: "AML та Crypto Compliance підтримка для клієнтів y ЄС",
-    heroText: "AML Bridge EU допомагає бізнесу та приватним клієнтам готувати структуровані AML-документи, відповідати банкам і криптобіржам, пояснювати походження коштів та покращувати compliance readiness.",
+    heroText: "AML Bridge EU допомагає бізнесу та приватним клієнтам готувати структуровані AML-документи, відповідати банкам and криптобіржам, пояснювати походження коштів та покращувати compliance readiness.",
     heroCta: "Отримати консультацію",
     heroAlt: "Переглянути послуги",
     heroNote: "AML-політики • Source of Funds пакети • Bank / EMI onboarding • Crypto compliance responses",
     metrics: [["2", "AML сертифікати"], ["45+", "CPD годин"], ["EU", "Фокус клієнтів"]],
     servicesTitle: "High-value compliance support",
     servicesSubtitle: "Для реальних AML, banking, fintech та crypto compliance кейсів.",
+    caseTitle: "Приклади реальних кейсів",
+    caseText: "Типові ситуації, де структурована AML-документація та чіткі compliance explanations можуть зменшити friction з банками, EMI та crypto platforms.",
+    cases: [["Frozen crypto exchange account", "Підготовка response package для exchange review: Source of Funds explanation, transaction logic та supporting documents."], ["Source of Funds request", "Створення structured SOF/SOW package з timeline, evidence map, bank statements, exchange records та client statement."], ["Bank compliance review", "Пояснення business activity, expected transaction flows, counterparties, risk controls та document trail."], ["EMI onboarding", "Підготовка business profile, compliance narrative, AML/KYC materials та transaction flow explanation."], ["AML policy package", "Підготовка AML/KYC policy, CDD/EDD procedure, sanctions screening process та internal control documentation."], ["High-risk transfer explanation", "Організація фактів і доказів щодо large transfers, crypto-to-fiat conversion, business income або international payments."]],
     services: [
       ["Crypto Compliance Support", "Допомога з exchange reviews, Source of Funds поясненнями, transaction history clarification та підготовкою документів.", WalletCards],
       ["Розробка AML Policy", "AML/KYC policies, risk-based procedures, CDD/EDD, sanctions screening та internal controls.", FileText],
@@ -127,22 +133,22 @@ const content = {
     trustText: "Преміальна AML documentation support для клієнтів, яким потрібні чіткість, структура та defensible explanations.",
     trustCards: [["Certification background", "AML Foundations та Senior Specialist training з CPD hours.", BadgeCheck], ["Document-first approach", "Clear files, timelines, evidence maps та structured explanations.", FileCheck2], ["Crypto-aware support", "Source of funds, transaction trails, exchange reviews та wallet logic.", LockKeyhole], ["EU business focus", "Підтримка клієнтів у взаємодії з banks, EMIs, exchanges та compliance teams.", Globe2]],
     whoTitle: "Кому ми допомагаємо",
-    who: ["Crypto users та компаніям із compliance reviews", "Fintech та payment-related businesses", "Компаніям перед bank або EMI onboarding", "Бізнесам, яким потрібна AML/KYC документація", "Real estate, consulting та service businesses", "Приватним клієнтам з Source of Funds поясненнями"],
+    who: ["Crypto users та компаніям із compliance reviews", "Fintech та payment-related businesses", "Компаніям перед bank чи EMI onboarding", "Бізнесам, яким потрібна AML/KYC документація", "Real estate, consulting та service businesses", "Приватним клієнтам з Source of Funds поясненнями"],
     processTitle: "Структурований процес",
     process: [["Первинний аналіз", "Ви надсилаєте опис кейсу, бізнес-профіль or compliance-запит."], ["Document mapping", "Ми перевіряємо факти, логіку транзакцій, докази та відсутні документи."], ["Підготовка пакета", "Ми готуємо індивідуальні compliance-документи та зрозумілі пояснення."], ["Фінальна передача", "Ви отримуєте structured package для внутрішнього використання або подання."]],
     certTitle: "AML training & certification background",
     certText: "AML Bridge EU базується на практичному AML training, включаючи Anti-Money Laundering Foundations та Certified Anti-Money Laundering Senior Specialist certification. Ці сертифікати підтримують наш document-focused consulting approach, але не є державною ліцензією або regulator approval.",
     aboutTitle: "Практична compliance підтримка, не теорія",
-    aboutText: "Ми фокусуємося на документах, поясненнях та risk logic, які банки, EMIs, crypto platforms і compliance teams можуть реально перевірити.",
+    aboutText: "Ми фокусуємося на документах, поясненнях та risk logic, які банки, EMIs, crypto platforms та compliance teams можуть реально перевірити.",
     trust: ["Фокус на документах", "EU-oriented", "Crypto-aware", "Risk-based", "Зрозуміла мова", "Premium support"],
     faqTitle: "FAQ",
-    faq: [["Ви гарантуєте approval банку or розблокування акаунта?", "No. Ми готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
+    faq: [["Ви гарантуєте approval банку чи розблокування акаунта?", "Ми не готуємо документи та надаємо compliance support, але остаточне рішення приймає відповідна установа."], ["Ви надаєте юридичні або податкові консультації?", "Ні. Ми надаємо compliance consulting та documentation support. Legal/tax advice має надаватися кваліфікованими спеціалістами."], ["Ви працюєте з приватними клієнтами?", "Так, особливо у crypto-related Source of Funds та bank compliance cases."], ["Документи індивідуальні?", "Так. Документи готуються на основі реальних обставин, бізнес-моделі, transaction logic та risk profile."]],
     contactTitle: "Отримати конфіденційний review",
     contactText: "Надішліть короткий опис кейсу. Ми перевіримо ситуацію та пояснимо, який compliance package може бути потрібен.",
     form: ["Імʼя", "Email", "Telegram / WhatsApp", "Країна", "Тип кейсу", "Короткий опис"],
     send: "Надіслати запит",
     quickCta: "Потрібна термінова compliance підтримка?",
-    quickCtaText: "Для exchange freezes, bank reviews or Source of Funds requests надішліть короткий опис кейсу та доступні документи.",
+    quickCtaText: "Для exchange freezes, bank reviews чи Source of Funds requests надішліть короткий опис кейсу та доступні документи.",
     disclaimer: "AML Bridge EU надає AML та compliance consulting, documentation support and practical advisory services. Ми не надаємо юридичні або податкові консультації та не гарантуємо approval з боку банків, криптобірж, платіжних установ або регуляторів. Остаточне рішення завжди приймає відповідна установа.",
   },
   pl: {
@@ -156,6 +162,9 @@ const content = {
     metrics: [["2", "Certyfikaty AML"], ["45+", "Godzin CPD"], ["EU", "Fokus klientów"]],
     servicesTitle: "High-value compliance support",
     servicesSubtitle: "Dla realnych spraw AML, banking, fintech i crypto compliance.",
+    caseTitle: "Przykłady realnych spraw",
+    caseText: "Typowe sytuacje, w których uporządkowana dokumentacja AML i jasne wyjaśnienia compliance mogą ograniczyć friction z bankami, EMI i crypto platforms.",
+    cases: [["Frozen crypto exchange account", "Przygotowanie response package dla exchange review: Source of Funds explanation, transaction logic i supporting documents."], ["Source of Funds request", "Przygotowanie structured SOF/SOW package z timeline, evidence map, bank statements, exchange records i client statement."], ["Bank compliance review", "Wyjaśnienie business activity, expected transaction flows, counterparties, risk controls i document trail."], ["EMI onboarding", "Przygotowanie business profile, compliance narrative, AML/KYC materials i transaction flow explanation."], ["AML policy package", "Przygotowanie AML/KYC policy, CDD/EDD procedure, sanctions screening process i internal control documentation."], ["High-risk transfer explanation", "Uporządkowanie faktów i dowodów dotyczących large transfers, crypto-to-fiat conversion, business income lub international payments."]],
     services: [
       ["Crypto Compliance Support", "Wsparcie przy exchange reviews, Source of Funds explanations, transaction history clarification i przygotowaniu dokumentów.", WalletCards],
       ["Opracowanie AML Policy", "AML/KYC policies, risk-based procedures, CDD/EDD, sanctions screening i internal controls.", FileText],
@@ -317,6 +326,27 @@ function App() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-5 py-20">
+          <div className="max-w-3xl">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-bold text-emerald-100">
+              <Layers3 size={16} /> Case examples
+            </div>
+            <h2 className="text-4xl font-black tracking-tight md:text-5xl">{t.caseTitle}</h2>
+            <p className="mt-4 text-lg leading-8 text-white/60">{t.caseText}</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {t.cases.map((item) => (
+              <div key={item[0]} className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-xl transition hover:-translate-y-1 hover:border-emerald-300/40 hover:bg-white/[0.09]">
+                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-300/15 text-emerald-200">
+                  <FileCheck2 size={21} />
+                </div>
+                <h3 className="text-lg font-black text-white">{item[0]}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/55">{item[1]}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -548,4 +578,3 @@ function App() {
 }
 
 export default App;
-{/* test */}
